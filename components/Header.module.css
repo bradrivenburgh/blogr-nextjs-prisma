@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--geist-foreground);
+  display: inline-block;
+}
+
+.left .link[data-active="true"] {
+  color: gray;
+}
+
+.link + .link {
+  margin-left: 1rem;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.right .link {
+  border: 1px solid var(--geist-foreground);
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+}
+
+.right p {
+  display: inline-block;
+  font-size: 13px;
+  padding-right: 1rem;
+}
